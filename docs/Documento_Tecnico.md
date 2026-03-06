@@ -6,7 +6,7 @@
 
 **Fecha:** Marzo 2026
 
-**Autor:** Juan Carlos
+**Autor:** Juan David Muñoz Garzon
 
 ---
 
@@ -396,11 +396,11 @@ if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
 ### 7.4 Variables de Entorno
 
 ```
-DB_HOST=localhost
+DB_HOST=LOCALHOST
 DB_USER=root
-DB_PASSWORD=***
-DB_NAME=ecommerce
-JWT_SECRET=tu_secreto_seguro_aqui
+DB_PASSWORD=123456
+DB_NAME=miapp
+JWT_SECRET=miclavesecreta123
 PORT=3000
 ```
 
@@ -444,7 +444,7 @@ npm run dev
 ```bash
 # Crear base de datos
 mysql -u root -p
-CREATE DATABASE ecommerce;
+CREATE DATABASE miapp;
 USE ecommerce;
 SOURCE database.sql;
 ```

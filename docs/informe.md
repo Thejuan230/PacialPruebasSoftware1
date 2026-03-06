@@ -6,7 +6,7 @@
 
 **Fecha:** Marzo 2026
 
-**Autor:** Juan Carlos
+**Autor:** Juan David Muñoz Garzon
 
 ---
 
@@ -611,7 +611,7 @@ El proyecto se encuentra en un estado de madurez aceptable para despliegue en pr
 
 ---
 
-**Aprobado por:** Juan Carlos
+**Aprobado por:** Juan David Muñoz Garzon
 
 **Fecha de aprobación:** Marzo 2026
 

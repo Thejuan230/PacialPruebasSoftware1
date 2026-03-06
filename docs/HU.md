@@ -4,7 +4,7 @@
 
 **Fecha:** Marzo 2026
 
-**Responsable:** Juan Carlos
+**Responsable:** Juan David Muñoz Garzon
 
 ---
 
@@ -18,7 +18,7 @@
 |-------|---------|
 | **Título** | REGISTRO DE NUEVO USUARIO |
 | **Nro Sprint** | 1 |
-| **Responsable** | Desarrollador |
+| **Responsable** | Desarrollador Juan David Muñoz Garzon |
 
 **Como:** visitante del sitio web
 
@@ -39,7 +39,7 @@
 |-------|---------|
 | **Título** | INICIO DE SESIÓN DE USUARIO |
 | **Nro Sprint** | 1 |
-| **Responsable** | Desarrollador |
+| **Responsable** | Desarrollador Juan David Muñoz Garzon|
 
 **Como:** usuario registrado
 
@@ -60,7 +60,7 @@
 |-------|---------|
 | **Título** | CIERRE DE SESIÓN |
 | **Nro Sprint** | 1 |
-| **Responsable** | Desarrollador |
+| **Responsable** | Desarrollador Juan David Muñoz Garzon|
 
 **Como:** usuario autenticado
 
@@ -84,7 +84,7 @@
 |-------|---------|
 | **Título** | VISUALIZACIÓN DEL CATÁLOGO DE PRODUCTOS |
 | **Nro Sprint** | 2 |
-| **Responsable** | Desarrollador |
+| **Responsable** | Desarrollador Juan David Muñoz Garzon|
 
 **Como:** visitante o usuario registrado
 
@@ -105,7 +105,7 @@
 |-------|---------|
 | **Título** | BÚSQUEDA DE PRODUCTOS |
 | **Nro Sprint** | 2 |
-| **Responsable** | Desarrollador |
+| **Responsable** | Desarrollador Juan David Muñoz Garzon|
 
 **Como:** visitante o usuario registrado
 
@@ -126,7 +126,7 @@
 |-------|---------|
 | **Título** | VER DETALLE DE PRODUCTO |
 | **Nro Sprint** | 2 |
-| **Responsable** | Desarrollador |
+| **Responsable** | Desarrollador Juan David Muñoz Garzon|
 
 **Como:** visitante o usuario registrado
 
@@ -150,7 +150,7 @@
 |-------|---------|
 | **Título** | AGREGAR PRODUCTO AL CARRITO |
 | **Nro Sprint** | 3 |
-| **Responsable** | Desarrollador |
+| **Responsable** | Desarrollador Juan David Muñoz Garzon|
 
 **Como:** visitante o usuario registrado
 
@@ -171,7 +171,7 @@
 |-------|---------|
 | **Título** | VER Y GESTIONAR EL CARRITO |
 | **Nro Sprint** | 3 |
-| **Responsable** | Desarrollador |
+| **Responsable** | Desarrollador Juan David Muñoz Garzon|
 
 **Como:** visitante o usuario registrado
 
@@ -197,7 +197,7 @@
 |-------|---------|
 | **Título** | CREAR PEDIDO (CHECKOUT) |
 | **Nro Sprint** | 4 |
-| **Responsable** | Desarrollador |
+| **Responsable** | Desarrollador Juan David Muñoz Garzon|
 
 **Como:** usuario autenticado con productos en el carrito
 
@@ -218,7 +218,7 @@
 |-------|---------|
 | **Título** | HISTORIAL DE PEDIDOS DEL CLIENTE |
 | **Nro Sprint** | 4 |
-| **Responsable** | Desarrollador |
+| **Responsable** | Desarrollador Juan David Muñoz Garzon|
 
 **Como:** cliente registrado
 
@@ -243,7 +243,7 @@
 |-------|---------|
 | **Título** | EDICIÓN DE PERFIL DE USUARIO |
 | **Nro Sprint** | 5 |
-| **Responsable** | Desarrollador |
+| **Responsable** | Desarrollador Juan David Muñoz Garzon|
 
 **Como:** usuario registrado
 
@@ -263,7 +263,7 @@
 |-------|---------|
 | **Título** | CAMBIO DE CONTRASEÑA |
 | **Nro Sprint** | 5 |
-| **Responsable** | Desarrollador |
+| **Responsable** | Desarrollador Juan David Muñoz Garzon|
 
 **Como:** usuario registrado
 

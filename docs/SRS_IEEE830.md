@@ -14,7 +14,7 @@
 |-------|---------|
 | **Fecha de creación** | Marzo 2026 |
 | **Revisión** | 1.0 |
-| **Autor** | Juan Carlos |
+| **Autor** | Juan David Muñoz Garzon |
 | **Estado** | Completado |
 | **Validación** | Pendiente |
 
@@ -42,10 +42,10 @@
 Este documento constituye la Especificación de Requisitos de Software (SRS) del sistema de **E-commerce**, una plataforma de comercio electrónico desarrollada con Node.js/Express y MySQL, orientada a la gestión integral de productos, carrito de compras, pedidos y administración de ventas.
 
 **Audiencia:**
-- Desarrolladores
-- Evaluadores / Testers
-- Personal administrativo
-- Docentes evaluadores
+- Desarrolladores Juan David Muñoz Garzon
+- Evaluadores / Testers Juan David Muñoz Garzon
+- Personal administrativo Juan David Muñoz Garzon
+- Docentes evaluadores Juan David Muñoz Garzon
 
 ### 1.2 Alcance
 
@@ -64,7 +64,7 @@ Este documento constituye la Especificación de Requisitos de Software (SRS) del
 
 | Campo | Detalle |
 |-------|---------|
-| **Nombre** | Juan Carlos |
+| **Nombre** | Juan David Muñoz Garzon |
 | **Rol** | Desarrollador Full Stack |
 | **Responsabilidades** | Análisis, diseño, desarrollo, pruebas y documentación |
 
