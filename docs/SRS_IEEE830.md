@@ -29,6 +29,12 @@
 
 ---
 
+<p align="center">
+  <img src="../frontend/img/Golem.webp" alt="E-commerce Logo" width="150" height="150">
+</p>
+
+---
+
 ## 1. Introducción
 
 ### 1.1 Propósito
@@ -97,6 +103,10 @@ Este documento constituye la Especificación de Requisitos de Software (SRS) del
 ## 2. Descripción General
 
 ### 2.1 Perspectiva del Producto
+
+<div align="center">
+  <img src="../frontend/img/Golem.webp" alt="Arquitectura E-commerce" width="120" height="120" style="margin: 10px;">
+</div>
 
 **E-commerce** es una aplicación web independiente de tres capas:
 
@@ -199,6 +209,10 @@ Este documento constituye la Especificación de Requisitos de Software (SRS) del
 ## 3. Requisitos Específicos
 
 ### 3.1 Requisitos Funcionales
+
+<p align="center">
+  <img src="../frontend/img/Golem.webp" alt="Requisitos Funcionales" width="110" height="110">
+</p>
 
 #### RF-01: Registro de Usuario
 
@@ -390,6 +404,10 @@ export const login = async (req, res) => {
 
 ### 3.2 Requisitos No Funcionales
 
+<p align="center">
+  <img src="../frontend/img/Golem.webp" alt="Requisitos No Funcionales" width="110" height="110">
+</p>
+
 #### RNF-01: Seguridad de Contraseña
 
 Las contraseñas deben encriptarse con bcrypt con un factor de 10 iteraciones mínimo.
@@ -466,3 +484,7 @@ El sistema debe funcionar en Chrome, Firefox, Edge y Safari versiones recientes.
 ---
 
 **Fin del Documento**
+
+<p align="center">
+  <img src="../frontend/img/Golem.webp" alt="E-commerce Finalizado" width="100" height="100">
+</p>
