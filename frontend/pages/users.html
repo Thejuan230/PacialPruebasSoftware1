@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de Usuarios</title>
+  <link rel="stylesheet" href="../css/user.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- Botón de regresar -->
+  <div class="page-header">
+    <button onclick="volverAtras()" class="btn-back">
+      ← Regresar al Panel
+    </button>
+    <h1>👥 Gestión de Usuarios</h1>
+    <button onclick="cerrarSesion()" class="btn-logout">
+      Cerrar Sesión
+    </button>
+  </div>
+  <table id="userTable">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Email</th>
+        <th>Rol</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <!-- Modal de edición -->
+  <div id="editModal" class="modal">
+    <div class="modal-content">
+      <h2>Editar Usuario</h2>
+      <form id="editForm">
+        <input type="hidden" id="editId">
+        <input type="text" id="editName" placeholder="Nombre">
+        <input type="email" id="editEmail" placeholder="Email">
+        <select id="editRol">
+          <option value="admin">Admin</option>
+          <option value="cliente">Cliente</option>
+        </select>
+        <button type="submit">Guardar</button>
+        <button type="button" id="closeModal">Cancelar</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="../js/navigation.js"></script>
+  <script src="../js/users.js"></script>
+</body>
+</html>

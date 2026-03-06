@@ -1,0 +1,334 @@
+/* ====== Estilos globales ====== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #1a0e0e 0%, #2d1b1b 50%, #3d2525 100%);
+  margin: 0;
+  padding: 0;
+  color: #e8d5d5;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Efecto de partículas de fondo */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 20% 80%, rgba(120, 30, 30, 0.1) 0%, transparent 50%),
+              radial-gradient(circle at 80% 20%, rgba(150, 40, 40, 0.1) 0%, transparent 50%),
+              radial-gradient(circle at 40% 40%, rgba(100, 20, 20, 0.05) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* ====== Header ====== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+  background: linear-gradient(145deg, rgba(45, 27, 27, 0.8), rgba(61, 37, 37, 0.8));
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(139, 0, 0, 0.2);
+}
+
+header h1 {
+  color: #f5f5f5;
+  font-size: 2rem;
+  margin: 0;
+  background: linear-gradient(45deg, #c41e3a, #8b0000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 300;
+}
+
+header button {
+  background: linear-gradient(145deg, #8b0000, #a52a2a);
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(139, 0, 0, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+header button:hover {
+  background: linear-gradient(145deg, #a52a2a, #dc143c);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(139, 0, 0, 0.4);
+}
+
+/* ====== Grid de productos ====== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* ====== Tarjetas de productos ====== */
+.card {
+  background: linear-gradient(145deg, rgba(45, 27, 27, 0.8), rgba(61, 37, 37, 0.8));
+  border: 1px solid rgba(139, 0, 0, 0.3);
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  animation: fadeIn 0.6s ease-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+  border-color: rgba(139, 0, 0, 0.5);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  border: 2px solid rgba(139, 0, 0, 0.2);
+}
+
+.card h3 {
+  color: #f5f5f5;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.card p {
+  color: #e8d5d5;
+  margin: 8px 0;
+  font-size: 0.9rem;
+}
+
+.card .price {
+  color: #dc143c;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 15px 0;
+}
+
+.card .stock {
+  color: #4a7c59;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+.card button {
+  background: linear-gradient(145deg, #8b0000, #a52a2a);
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(139, 0, 0, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.card button:hover {
+  background: linear-gradient(145deg, #a52a2a, #dc143c);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(139, 0, 0, 0.4);
+}
+
+.card button:disabled {
+  background: linear-gradient(145deg, #666, #888);
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* ====== Filtros ====== */
+.filters {
+  margin: 20px;
+  padding: 20px;
+  background: linear-gradient(145deg, rgba(45, 27, 27, 0.8), rgba(61, 37, 37, 0.8));
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(139, 0, 0, 0.2);
+}
+
+.filters select {
+  padding: 12px 16px;
+  margin: 0 10px;
+  border: 2px solid rgba(139, 0, 0, 0.3);
+  border-radius: 10px;
+  background: rgba(61, 37, 37, 0.7);
+  color: #e8d5d5;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.filters select:focus {
+  outline: none;
+  border-color: #dc143c;
+  box-shadow: 0 0 15px rgba(220, 20, 60, 0.3);
+}
+
+/* ====== Animaciones ====== */
+@keyframes fadeIn {
+  from { 
+    opacity: 0; 
+    transform: translateY(20px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
+
+/* ====== Barra de navegación ====== */
+.navigation-bar {
+  background: linear-gradient(145deg, rgba(26, 14, 14, 0.95), rgba(45, 27, 27, 0.95));
+  backdrop-filter: blur(15px);
+  border-bottom: 1px solid rgba(139, 0, 0, 0.3);
+  padding: 15px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav-left, .nav-center, .nav-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.nav-left {
+  justify-content: flex-start;
+}
+
+.nav-center {
+  justify-content: center;
+}
+
+.nav-right {
+  justify-content: flex-end;
+}
+
+.btn-back {
+  background: linear-gradient(145deg, rgba(139, 0, 0, 0.6), rgba(165, 42, 42, 0.6));
+  color: #e8d5d5;
+  border: 1px solid rgba(139, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+}
+
+.btn-back:hover {
+  background: linear-gradient(145deg, rgba(139, 0, 0, 0.8), rgba(165, 42, 42, 0.8));
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(139, 0, 0, 0.3);
+  color: #fff;
+}
+
+.btn-logout {
+  background: linear-gradient(145deg, #8b0000, #a52a2a);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+  box-shadow: 0 3px 10px rgba(139, 0, 0, 0.3);
+}
+
+.btn-logout:hover {
+  background: linear-gradient(145deg, #a52a2a, #dc143c);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(139, 0, 0, 0.4);
+}
+
+.user-info {
+  color: #e8d5d5;
+  font-weight: 500;
+  font-size: 16px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+  .nav-content {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .nav-left, .nav-center, .nav-right {
+    justify-content: center;
+  }
+  
+  .user-info {
+    font-size: 14px;
+  }
+  
+  .btn-back, .btn-logout {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+}
+
+/* ====== Scrollbar personalizado ====== */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(45, 27, 27, 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(145deg, #8b0000, #a52a2a);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(145deg, #a52a2a, #dc143c);
+}

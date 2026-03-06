@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel del Cliente</title>
+  <link rel="stylesheet" href="../css/dashboard.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="container client-dashboard">
+    <div class="client-header">
+      <h1>🛍️ Mi Panel de Cliente</h1>
+      <p class="client-subtitle">Explora productos, gestiona tu carrito y consulta tus compras</p>
+    </div>
+
+    <div class="client-grid">
+      <!-- Catálogo de Productos -->
+      <div class="client-card featured">
+        <div class="card-icon">🛍️</div>
+        <h3>Catálogo de Productos</h3>
+        <p>Explora todos los productos disponibles y agrega al carrito</p>
+        <a href="catalogo.html" class="btn-client-primary">
+          <span>Ver Catálogo</span>
+          <span class="btn-arrow">→</span>
+        </a>
+      </div>
+
+      <!-- Mis Compras -->
+      <div class="client-card">
+        <div class="card-icon">📦</div>
+        <h3>Mis Compras</h3>
+        <p>Consulta el historial de tus compras anteriores</p>
+        <div class="purchase-info">
+          <span class="purchase-count" id="purchaseCount">0</span>
+          <span class="purchase-label">compras</span>
+        </div>
+        <button class="btn-client-secondary" onclick="showPurchaseHistory()">
+          <span>Ver Historial</span>
+          <span class="btn-arrow">→</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal de Historial de Compras -->
+  <div id="purchaseHistoryModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>📦 Mis Compras</h2>
+      <div class="purchase-list" id="purchaseList">
+        <div class="no-purchases">
+          <div class="no-purchases-icon">📦</div>
+          <h3>No tienes compras aún</h3>
+          <p>¡Explora nuestro catálogo y haz tu primera compra!</p>
+          <a href="catalogo.html" class="btn-client-primary">Ver Catálogo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="../js/navigation.js"></script>
+  <script src="../js/cliente.js"></script>
+</body>
+</html>
